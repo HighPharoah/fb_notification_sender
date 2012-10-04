@@ -14,8 +14,8 @@ The Notification_sender class provides a wrapper around this API and provides so
 sender_instance.php provides an example usage so you can follow along.<br/>
 
 WHAT YOU SHOULD KNOW:<br/>
-1- The Notification_sender is database driven, pulling pending notifications and application users from appropriate tables. If you choose to enable logging a table needs to exist to hold that info<br/>
-2- The database settings and app credentials are passed to the constructor via a $config param. see sender_instance.php 
+1- The Notification_sender is database driven, pulling pending notifications and application users from appropriate tables. If you choose to enable logging, a table needs to exist to hold that info<br/>
+2- The database settings and app credentials are passed to the constructor via a $config param. see sender_instance.php<br/>
 3- The minimum expected tables are:<br/>
 notifications (notification_id, msg, success, fail, date)<br/>
 application_users (user_ID, fb_code)<br/>
